@@ -24,6 +24,7 @@ html {
     margin: auto;
     background: var(--root-bg);
     max-width: 45em;
+    line-height: 1.6em;
 }
 
 body {

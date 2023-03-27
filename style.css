@@ -5,4 +5,12 @@
 
 html {
     font-family: 'Shantell Sans', serif;
+    margin: auto;
+    background: plum;
+    max-width: 45em;
+}
+
+body {
+    padding: 1em;
+    background: white;
 }

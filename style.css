@@ -3,14 +3,31 @@
     src: url('ShantellSans[BNCE,INFM,SPAC,ital,wght].woff2');
 }
 
+@media (prefers-color-scheme: dark) {
+    :root {
+        --body-bg: #111;
+        --text-color: #AAA;
+        --root-bg: #2A002A;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --body-bg: #EEE;
+        --text-color: #444;
+        --root-bg: plum;
+    }
+}
+
 html {
     font-family: 'Shantell Sans', serif;
     margin: auto;
-    background: plum;
+    background: var(--root-bg);
     max-width: 45em;
 }
 
 body {
     padding: 1em;
-    background: white;
+    background: var(--body-bg);
+    color: var(--text-color);
 }

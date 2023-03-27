@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Shantell Sans';
+    src: url('ShantellSans[BNCE,INFM,SPAC,ital,wght].woff2');
+}
+
+html {
+    font-family: 'Shantell Sans', serif;
+}

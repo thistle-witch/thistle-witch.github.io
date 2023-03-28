@@ -7,6 +7,37 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+    <script>
+        function populateStars() {
+            let horizonalRepeats = Math.ceil(window.innerWidth / 400) + 1;
+            let verticalRepeats = Math.ceil(window.innerHeight / 350);
+            let coords = [[-10,70], [30, 250], [70, 350], [100, 20], [200, 300], [250, 100]];
+            let stars = document.getElementsByClassName('stars')[0];
+            
+            let starsChildren = new Array();
+            for (let gridX = 0; gridX < horizonalRepeats; gridX++) {
+                for (let gridY = 0; gridY < verticalRepeats; gridY++) {
+                    for (i in coords) {
+                        let star = document.createElement('div');
+                        star.setAttribute('class', 'star');
+                        star.style.top = `${coords[i][0] + (gridY * 350)}px`;
+                        star.style.left = `${coords[i][1] + (gridX * 400)}px`;
+                        star.appendChild(document.createElement('span'));
+                        starsChildren.push(star);
+                    }
+                }
+            }
+
+            stars.replaceChildren(...starsChildren);
+        }
+        window.addEventListener('load', (event) => {
+            populateStars();
+        })
+
+        window.addEventListener('resize', (event) => {
+            populateStars();
+        })
+    </script>
     <main>
 
         <header>
@@ -149,42 +180,6 @@
             <div class='head'></div>
         </div>
         <div class='stars'>
-            <div class='star'>
-                <span></span>
-            </div>
-            <div class='star'>
-                <span></span>
-            </div>
-            <div class='star'>
-                <span></span>
-            </div>
-            <div class='star'>
-                <span></span>
-            </div>
-            <div class='star'>
-                <span></span>
-            </div>
-            <div class='star'>
-                <span></span>
-            </div>
-            <div class='star'>
-                <span></span>
-            </div>
-            <div class='star'>
-                <span></span>
-            </div>
-            <div class='star'>
-                <span></span>
-            </div>
-            <div class='star'>
-                <span></span>
-            </div>
-            <div class='star'>
-                <span></span>
-            </div>
-            <div class='star'>
-                <span></span>
-            </div>
         </div>
     </div>
 

@@ -25,6 +25,7 @@ html {
     background: var(--root-bg);
     max-width: 45em;
     line-height: 1.6em;
+    cursor: url('wait.svg'), auto;
 }
 
 main {

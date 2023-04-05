@@ -8,6 +8,8 @@
         --body-bg: #111;
         --text-color: #AAA;
         --root-bg: #2A002A;
+        --link-unvisited: #7c7cff;
+        --link-visited: #ae3bae;
     }
 }
 
@@ -16,6 +18,8 @@
         --body-bg: #EEE;
         --text-color: #444;
         --root-bg: plum;
+        --link-unvisited: #1010c0;
+        --link-visited: #c71ac7;
     }
 }
 
@@ -33,6 +37,14 @@ main {
     background: var(--body-bg);
     color: var(--text-color);
     transform: rotate(1deg);
+}
+
+a:link {
+  color: var(--link-unvisited);
+}
+
+a:visited {
+  color: var(--link-visited);
 }
 
 article {

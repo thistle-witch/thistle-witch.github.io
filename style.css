@@ -446,3 +446,37 @@ article {
     transform: rotate(0deg);
   }
 }
+
+@media (prefers-reduced-motion) {
+  .stars {
+      animation: none;
+  }
+
+  .stars .star span {
+    animation: none;
+  }
+
+  .rainbow span {
+    animation: none;
+  }
+
+  .nyan-cat {
+    animation: none;
+  }
+
+  .head {
+    animation: none;
+  }
+  
+  .body {
+    animation: none;
+  }
+
+  .feet {
+    animation: none;
+  }
+
+  .tail span {
+    animation: none;
+  }
+}

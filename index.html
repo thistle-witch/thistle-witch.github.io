@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>✨ þistle's place ✨</title>
     <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
     <script>
         function populateStars() {
             let horizonalRepeats = Math.ceil(window.innerWidth / 400) + 1;
             let verticalRepeats = Math.ceil(window.innerHeight / 350);
-            let coords = [[-10,70], [30, 250], [70, 350], [100, 20], [200, 300], [250, 100]];
+            let coords = [[-10, 70], [30, 250], [70, 350], [100, 20], [200, 300], [250, 100]];
             let stars = document.getElementsByClassName('stars')[0];
-            
+
             let starsChildren = new Array();
             for (let gridX = 0; gridX < horizonalRepeats; gridX++) {
                 for (let gridY = 0; gridY < verticalRepeats; gridY++) {
@@ -165,6 +167,9 @@
                 and face my soul to rest.
             </p>
         </article>
+
+        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License"
+                style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
     </main>
 
     <div class='wrapper'>
@@ -184,4 +189,5 @@
     </div>
 
 </body>
+
 </html>
